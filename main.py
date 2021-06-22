@@ -222,7 +222,7 @@ if __name__ == '__main__':
     parser.add_argument('--ckpt_path', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/ckpt')
     # parser.add_argument('--ckpt_path', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/epoch-34.pth')
     parser.add_argument('--multi_gpu', action='store_true')
-    parser.add_argument('--gpu_ids', type=list, default=[0, 1, 2, 3])
+    parser.add_argument('--gpu_ids', type=list, default=[0, 1, 2, 3, 4, 5, 6, 7])
     parser.add_argument('--warm_start', action='store_true')
     parser.add_argument('--warm_start_epoch', type=int, default=0)
     parser.add_argument('--early_stopping_patience', type=int, default=10)
