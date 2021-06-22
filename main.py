@@ -199,10 +199,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     # input parameters
-    parser.add_argument('--img_path', type=str, default='./data/images')
-    parser.add_argument('--train_csv_file', type=str, default='./data/train_labels.csv')
-    parser.add_argument('--val_csv_file', type=str, default='./data/val_labels.csv')
-    parser.add_argument('--test_csv_file', type=str, default='./data/test_labels.csv')
+    parser.add_argument('--img_path', type=str, default='/opt/tiger/wzq_mnist/data/AVA_dataset/images/images')
+    parser.add_argument('--train_csv_file', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/train_labels.csv')
+    parser.add_argument('--val_csv_file', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/val_labels.csv')
+    parser.add_argument('--test_csv_file', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/test_labels.csv')
 
     # training parameters
     parser.add_argument('--train',action='store_true')
@@ -219,7 +219,7 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=100)
 
     # misc
-    parser.add_argument('--ckpt_path', type=str, default='./ckpts')
+    parser.add_argument('--ckpt_path', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/epoch-34.pth')
     parser.add_argument('--multi_gpu', action='store_true')
     parser.add_argument('--gpu_ids', type=list, default=None)
     parser.add_argument('--warm_start', action='store_true')
