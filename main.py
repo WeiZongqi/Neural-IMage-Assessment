@@ -219,7 +219,7 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=100)
 
     # misc
-    parser.add_argument('--ckpt_path', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/epoch-34.pth')
+    parser.add_argument('--ckpt_path', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/ckpt')
     # parser.add_argument('--ckpt_path', type=str, default='/opt/tiger/wzq_mnist/Neural-IMage-Assessment/epoch-34.pth')
     parser.add_argument('--multi_gpu', action='store_true')
     parser.add_argument('--gpu_ids', type=list, default=[0, 1, 2, 3])
